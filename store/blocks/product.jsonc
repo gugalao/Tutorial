@@ -1,7 +1,71 @@
 {
   "store.product": {
     "children": [
-      
+      "breadcrumb",
+      "flex-layout.row#main"
     ]
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "flex-layout.col#left",
+      "flex-layout.col#right"
+    ]
+  },
+  "flex-layout.col#left": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#right": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "product-name",
+      "product-identifier.product",
+      "product-list-price",
+      "product-selling-price",
+      "flex-layout.row#qty-sku",
+      "product-price-savings",
+      "product-installments",
+      "add-to-cart-button"
+    ]
+  },
+  "flex-layout.row#qty-sku": {
+    "children": [
+      "sku-selector",
+      "product-quantity"
+    ]
+  },
+  "add-to-cart-button": {
+    "props": {
+      "isOneClickBuy": true,
+      "text": "Compre já o seu macaco"
+    }
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "aspectRatio": "1:1",
+      "displayMode": "carousel",
+      "hiddenImages": "skuvariation",
+      "maxHeight": 450,
+      "thumbnailsOrientation": "horizontal",
+      "thumbnailVisibility": "hidden"
+    }
+  },
+  "product-price-savings": {
+    "props": {
+      "message": "Você está economizando: {savingsPercentage}"
+    }
+  },
+  "product-installments": {
+    "props": {
+      "message": "Em {installmentsNumber} macacos de {installmentValue} bananas"
+    }
   }
 }

@@ -1,15 +1,14 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "rich-text#home-title"
     ]
   },
-  "rich-text": { 
+  "rich-text#home-title": { 
     "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "text": "**Tutorial Macaco Flamejante**",
+      "textColor": "emphasis",
+      "textPosition": "CENTER"
     }
   }
 }
